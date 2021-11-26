@@ -4,29 +4,11 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    public Vector3 InitialPos;
-    public float Speed = 10f;
+    public GameObject Player;
+    private Vector3 Offset = new Vector3(15, 0, 0);
 
-    public float VerticalInput;
-    public float TurnSpeed = 20f;
-
-    public float zMax;
-    // Start is called before the first frame update
-    void Start()
+    private void LateUpdate()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        VerticalInput = Input.GetAxis("Vertical");
-
-        transform.Translate(Vector3.forward * Speed * Time.deltaTime * VerticalInput);
-
-        if (zMax >= 450)
-        {
-            Debug.Log("THE END");
-        }
+        transform.position = Player.transform.position + Offset;
     }
 }
