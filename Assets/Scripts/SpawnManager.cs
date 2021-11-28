@@ -15,8 +15,6 @@ public class SpawnManager : MonoBehaviour
         Instantiate(ObstaclePrefab, SpawnPos, ObstaclePrefab.transform.rotation);
     }
 
-    private Vector3 RandomY;
-
     // Start is called before the first frame update
     void Start()
     {
