@@ -6,11 +6,12 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject ObstaclePrefab;
     private Vector3 SpawnPos = new Vector3 (0, 0, 30);
+    private int YRange = 10;
 
     //Función que determina posición y distancia de nuestro obstáculo
     public void SpawnObstacle()
     {
-        float RandomY = Random.Range(-10f, 10f);
+        float RandomY = Random.Range(-YRange, YRange);
         SpawnPos = new Vector3(0, RandomY, SpawnPos.z + 50);
         Instantiate(ObstaclePrefab, SpawnPos, ObstaclePrefab.transform.rotation);
     }
