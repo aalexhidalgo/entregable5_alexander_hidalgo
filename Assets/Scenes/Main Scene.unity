@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d7b03da947c1b4bad6b2db967205b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 10
+  Speed: 12
   VerticalInput: 0
   TurnSpeed: 20
 --- !u!1 &170076733
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 20588093}
-  Offset: {x: 15, y: 0, z: 0}
+  Offset: {x: 50, y: 0, z: 0}
 --- !u!20 &534669904
 Camera:
   m_ObjectHideFlags: 0
@@ -481,6 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1128951251}
   - component: {fileID: 1128951250}
+  - component: {fileID: 1128951252}
   m_Layer: 0
   m_Name: Spawn Manager
   m_TagString: Untagged
@@ -514,6 +515,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1128951252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128951249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a07ce3c6772c7e3408922c79d6954c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObstaclePrefab: {fileID: 7254713537057693292, guid: 9c3fbc80529cd44c78c43550ed341818, type: 3}
 --- !u!1 &1313498724
 GameObject:
   m_ObjectHideFlags: 0
