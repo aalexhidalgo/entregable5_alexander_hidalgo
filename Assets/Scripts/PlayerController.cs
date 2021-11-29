@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Vector3 InitialPos;
-    public float Speed = 10f;
+    private Vector3 InitialPos = new Vector3 (0, 0, 0);
+    private float Speed = 12f;
 
-    public float VerticalInput;
-    public float TurnSpeed = 20f;
+    private float VerticalInput;
+    private float TurnSpeed = 30f;
 
     private float zMax = 450;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Posición Inicial
-        InitialPos = Vector3.zero;
+        //Posición inicial
+        transform.position = InitialPos;
     }
 
     // Update is called once per frame
